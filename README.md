@@ -1,6 +1,111 @@
 # NASSA-schema
 The schema for formatting NASSA modules (NASSA.yml fields, directory and file structure).
 
+## Module file structure
+
+### Minimum (must have, to pass validation)
+
+```
+YYYY-SURNAME-001 (module root)
+│   CHANGELOG.txt
+│   LICENSE
+|   NASSA.yml
+│   README.md
+│   references.bib
+│
+└───documentation
+│   │   README.md
+│   │
+│   └───<IMPLEMENTATION LANGUAGE>
+│       │   README.md
+│   
+└───<IMPLEMENTATION LANGUAGE>
+    │   moduleShortTitle.<LANGUAGE EXTENSION>
+```
+
+### Maximum (can have)
+
+```
+YYYY-SURNAME-001 (module root)
+│   .gitignore
+│   CHANGELOG.txt
+│   LICENSE
+|   NASSA.yml
+│   README.md
+│   references.bib
+│
+└───documentation
+│   │   README.md
+│   │   designDetails.md
+|   │   ...
+│   │
+│   └───netlogo
+│   |   │   README.md
+│   |   │   moduleTitle interface.png
+│   |   │   ...
+│   |
+│   └───python
+│   |   │   README.md
+│   |   │   diagram.png
+│   |   │   ...
+│   |
+│   └───r
+│       │   README.md
+│       │   pseudoCode.txt
+│       │   ...
+│   
+└───netlogo_implementation
+│   │   moduleShortTitle.nlogo
+│   │
+│   └───input
+│   │   │   aDataset.csv
+│   │   │   aRaster.png
+|   |   |   ...
+│   │
+│   └───output (for demonstration purposes)
+│       │   aDataset.csv
+│       │   aRaster.png
+|       |   ...
+│
+└───python_implementation
+│   │   moduleShortTitle.py
+│   │   demonstration.ipynb
+|   |   ...
+│   │
+│   └───input
+│   │   │   aDataset.csv
+│   │   │   aRaster.png
+|   |   |   ...
+│   │
+│   └───output (for demonstration purposes)
+│       │   aDataset.csv
+│       │   aRaster.png
+|       |   ...
+│
+└───r_implementation
+│   │   moduleShortTitle.r
+│   │   demonstration.Rmd
+│   │   demonstration.html
+│   │   demonstration.md
+|   |   ...
+|   |
+│   └───demonstration_files
+│   │   │   unnamed-chunk-5-1.png
+|   |   |   ...
+|   |
+│   └───input
+│   │   │   aDataset.csv
+│   │   │   aRaster.png
+|   |   |   ...
+|   |
+│   └───output (for demonstration purposes)
+│       │   aDataset.csv
+│       │   aRaster.png
+|       |   ...
+```
+
+## NASSA.yml fields
+
 | field                | level | parent          | description                                                                                                                                                                                                                                                                     | type   | format                                                                                                                                                               | mandatory | implemented in nassa-hs | format check implemented in nassa-hs |
 | -------------------- | ----- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ----------------------- | ------------------------------------ |
 | id                   | 0     |                 | Module identification number. Assigned when opening a submission.                                                                                                                                                                                                               | String | <YEAR>-<FIRSTAUTHORSURNAME>-<999> or a hash?                                                                                                                         | true      | true                    | false                                |
