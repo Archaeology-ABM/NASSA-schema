@@ -300,7 +300,7 @@
    "field": "softwareDependencies",
    "level": 0,
    "parent": "",
-   "description": "Listing any software (libraries, packages, etc), specifying the release version, on which the module relies to properly function.\n",
+   "description": "Listing any software (libraries, packages, etc), specifying the release version, on which the module relies to properly function.",
    "type": "Array",
    "format": "free text",
    "mandatory": true,
