@@ -1,0 +1,1 @@
+- V 0.1.0: First schema consolidated, made compatible with nassa-hs and files in NASSA modules so far
