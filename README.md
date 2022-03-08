@@ -14,10 +14,11 @@ YYYY-SURNAME-001 (module root)
 │   references.bib
 │
 └───documentation
-│   │   README.md
+│   │   tableOfContents.md
 │   │
 │   └───<IMPLEMENTATION LANGUAGE>
-│       │   README.md
+│       │   tableOfContents.md
+│       │   ... (minimum depending on language)
 │   
 └───<IMPLEMENTATION LANGUAGE>
     │   moduleShortTitle.<LANGUAGE EXTENSION>
@@ -35,24 +36,26 @@ YYYY-SURNAME-001 (module root)
 │   references.bib
 │
 └───documentation
-│   │   README.md
+│   │   tableOfContents.md
 │   │   designDetails.md
 |   │   ...
 │   │
 │   └───netlogo
-│   |   │   README.md
+│   |   │   tableOfContents.md
 │   |   │   moduleTitle interface.png
 │   |   │   ...
 │   |
 │   └───python
-│   |   │   README.md
+│   |   │   tableOfContents.md
 │   |   │   diagram.png
 │   |   │   ...
 │   |
 │   └───r
-│       │   README.md
-│       │   pseudoCode.txt
-│       │   ...
+│   |   │   tableOfContents.md
+│   |   │   pseudoCode.txt
+│   |   │   ...
+|   |
+|   |   ... (other implementations)
 │   
 └───netlogo_implementation
 │   │   moduleShortTitle.nlogo
@@ -102,6 +105,8 @@ YYYY-SURNAME-001 (module root)
 │       │   aDataset.csv
 │       │   aRaster.png
 |       |   ...
+|
+|   ... (other implementations)
 ```
 
 ## NASSA.yml fields
