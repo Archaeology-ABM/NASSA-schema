@@ -6,9 +6,7 @@
    "description": "Module identification number. Assigned when opening a submission.",
    "type": "String",
    "format": "<YEAR>-<FIRSTAUTHORSURNAME>-<999> or a hash?",
-   "mandatory": true,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": false
+   "mandatory": true
  },
  {
    "field": "nassaVersion",
@@ -17,9 +15,7 @@
    "description": "Latest version of the NASSA schema that applies to this module (NASSA.yml fields, directory and file structure). ",
    "type": "String",
    "format": "1.0.0 (semantic versioning)",
-   "mandatory": true,
-   "implemented in nassa-hs": false ,
-   "format check implemented in nassa-hs": false
+   "mandatory": true
  },
  {
    "field": "moduleType",
@@ -28,9 +24,7 @@
    "description": "Whether a algorithm or a submodel (contain modules)",
    "type": "String",
    "format": "Algorithm, Submodel",
-   "mandatory": true,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": true
  },
  {
    "field": "title",
@@ -39,9 +33,7 @@
    "description": "Module name or title. It must include a useful description of module.",
    "type": "String",
    "format": "free text, max. 100",
-   "mandatory": true,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": true
  },
  {
    "field": "moduleVersion",
@@ -50,9 +42,7 @@
    "description": "Current version identifier. Defaults to \"1.0.0\" and should increase after every update.",
    "type": "String",
    "format": "1.0.0 (semantic versioning)",
-   "mandatory": true,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": true
  },
  {
    "field": "contributors",
@@ -61,9 +51,7 @@
    "description": "List of contributors to the module",
    "type": "",
    "format": "",
-   "mandatory": true,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": true
  },
  {
    "field": "roles",
@@ -72,9 +60,7 @@
    "description": "How this author contributed to the module (specific labels, see \"format\" column)",
    "type": "Array",
    "format": "Author, Compiler, Contributor, Copyright Holder, Creator, Thesis Advisor, Translator (https://journal.r-project.org/archive/2012-1/RJournal_2012-1_Hornik~et~al.pdf)",
-   "mandatory": true,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": true
  },
  {
    "field": "name",
@@ -83,9 +69,7 @@
    "description": "Full name of a contributor",
    "type": "String",
    "format": "<SURNAME>, <NAME> with no accent marks",
-   "mandatory": true,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": true
  },
  {
    "field": "email",
@@ -94,9 +78,7 @@
    "description": "Stable email of a contributor",
    "type": "String",
    "format": "valid email",
-   "mandatory": true,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": true
  },
  {
    "field": "orcid",
@@ -105,9 +87,7 @@
    "description": "ORCID number of a contributor",
    "type": "String",
    "format": "9999-9999-9999-9999",
-   "mandatory": false,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": false
  },
  {
    "field": "license",
@@ -116,9 +96,7 @@
    "description": "Software license for the code in this module",
    "type": "String",
    "format": "free text",
-   "mandatory": false,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": false
  },
  {
    "field": "lastUpdateDate",
@@ -127,9 +105,7 @@
    "description": "Date of the last update submitted",
    "type": "Date",
    "format": "YYYY-MM-DD",
-   "mandatory": true,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": true
  },
  {
    "field": "description",
@@ -138,9 +114,7 @@
    "description": "Description of what the module does. It should expand the information already given in the name/title.",
    "type": "String",
    "format": "free text",
-   "mandatory": true,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": true
  },
  {
    "field": "relatedModules",
@@ -149,9 +123,7 @@
    "description": "List of modules this one is related to (similar, depending on, ...)",
    "type": "Array",
    "format": "a valid module id as defined above",
-   "mandatory": false,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": false
+   "mandatory": false
  },
  {
    "field": "references",
@@ -160,9 +132,7 @@
    "description": "Literature references",
    "type": "",
    "format": "",
-   "mandatory": false,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": false
  },
  {
    "field": "bibFile",
@@ -171,9 +141,7 @@
    "description": "Relative path to a .bib file",
    "type": "String",
    "format": "path",
-   "mandatory": true,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": true
  },
  {
    "field": "moduleReferences",
@@ -182,9 +150,7 @@
    "description": "References that describe and explain the module, any of its parts, or its original use in a model. This includes public repositories holding models that include the module.",
    "type": "Array",
    "format": "a valid citation key from the submission BIBTEX file (.bib)",
-   "mandatory": false,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": false
  },
  {
    "field": "useExampleReferences",
@@ -193,9 +159,7 @@
    "description": "References citing, describing, or using the module, after it has been published in the NASSA library.",
    "type": "Array",
    "format": "a valid citation key from the submission BIBTEX file (.bib)",
-   "mandatory": false,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": false
  },
  {
    "field": "domainKeywords",
@@ -204,9 +168,7 @@
    "description": "Domain-related keywords",
    "type": "",
    "format": "",
-   "mandatory": false,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": false
+   "mandatory": false
  },
  {
    "field": "subjects",
@@ -215,9 +177,7 @@
    "description": "Subject keyword(s). Example/recommendation: https://ehrafworldcultures.yale.edu/ehrafe/majorSubjects.do",
    "type": "Array",
    "format": "",
-   "mandatory": false,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": false
+   "mandatory": false
  },
  {
    "field": "regions",
@@ -226,9 +186,7 @@
    "description": "Region keyword(s). Example/recommendation: http://www.geonames.org/",
    "type": "Array",
    "format": "",
-   "mandatory": false,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": false
+   "mandatory": false
  },
  {
    "field": "periods",
@@ -237,9 +195,7 @@
    "description": "Period keyword(s). Example/recommendation: https://perio.do/en/",
    "type": "Array",
    "format": "",
-   "mandatory": false,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": false
+   "mandatory": false
  },
  {
    "field": "modellingKeywords",
@@ -248,9 +204,7 @@
    "description": "Modelling-related keyword(s). Using NASSA ontology: <url placeholder>",
    "type": "Array",
    "format": "",
-   "mandatory": true,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": false
+   "mandatory": true
  },
  {
    "field": "programmingKeywords",
@@ -259,9 +213,7 @@
    "description": "Programming-related keyword(s). Using NASSA ontology: <url placeholder>",
    "type": "Array",
    "format": "",
-   "mandatory": true,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": false
+   "mandatory": true
  },
  {
    "field": "implementations",
@@ -270,9 +222,7 @@
    "description": "List of implementations in different programming languages",
    "type": "",
    "format": "",
-   "mandatory": true,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": true
  },
  {
    "field": "language",
@@ -281,9 +231,7 @@
    "description": "Programming language",
    "type": "String",
    "format": "Options: R, Python, Netlogo, Java, Julia, C#, Ruby, Processing",
-   "mandatory": true,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": true
  },
  {
    "field": "codeDir",
@@ -292,9 +240,7 @@
    "description": "Relative path to the directory containing the implementation in this language",
    "type": "String",
    "format": "path",
-   "mandatory": true,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": true
  },
  {
    "field": "softwareDependencies",
@@ -303,9 +249,7 @@
    "description": "Listing any software (libraries, packages, etc), specifying the release version, on which the module relies to properly function.",
    "type": "Array",
    "format": "free text",
-   "mandatory": true,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": true
  },
  {
    "field": "inputs",
@@ -314,9 +258,7 @@
    "description": "List of inputs required by the module. Create entries for each of the variables that can or should be given/set externally, so that the module can work.",
    "type": "",
    "format": "",
-   "mandatory": false,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": false
  },
  {
    "field": "name",
@@ -325,9 +267,7 @@
    "description": "Parameter/variable/file name in the module.",
    "type": "String",
    "format": "free text",
-   "mandatory": false,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": false
  },
  {
    "field": "type",
@@ -336,9 +276,7 @@
    "description": "Parameter/variable/file type. Use the programming language specific type.",
    "type": "String",
    "format": "free text",
-   "mandatory": false,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": false
  },
  {
    "field": "unit",
@@ -347,9 +285,7 @@
    "description": "Parameter/variable unit of measurement, if applicable.",
    "type": "String",
    "format": "free text",
-   "mandatory": false,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": false
  },
  {
    "field": "default",
@@ -358,9 +294,7 @@
    "description": "Parameter/variable default value",
    "type": "String",
    "format": "free text",
-   "mandatory": false,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": false
  },
  {
    "field": "description",
@@ -369,9 +303,7 @@
    "description": "Parameter/variable/file description. Meaning, data structure, or any other relevant information for the procurement and preparation of the input.",
    "type": "String",
    "format": "free text",
-   "mandatory": false,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": false
  },
  {
    "field": "outputs",
@@ -380,9 +312,7 @@
    "description": "List of outputs generated by the module. Create entries for each of the variables that are suggested as outputs. Ideally, the list should also include any module variable that can be read externally and is the product of module mechanisms (i.e., not equal to the inputs).",
    "type": "",
    "format": "",
-   "mandatory": false,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": false
  },
  {
    "field": "name",
@@ -391,9 +321,7 @@
    "description": "Variable/object name in the module.",
    "type": "String",
    "format": "free text",
-   "mandatory": false,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": false
  },
  {
    "field": "type",
@@ -402,9 +330,7 @@
    "description": "Variable/object type. Use the programming language specific type.",
    "type": "String",
    "format": "free text",
-   "mandatory": false,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": false
  },
  {
    "field": "unit",
@@ -413,9 +339,7 @@
    "description": "Variable/object unit of measurement, if applicable.",
    "type": "String",
    "format": "free text",
-   "mandatory": false,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": false
  },
  {
    "field": "description",
@@ -424,9 +348,7 @@
    "description": "Variable/object description. Meaning, data structure, or any other relevant information for data analysis and interpretation or the use of the output as input in another module.",
    "type": "String",
    "format": "free text",
-   "mandatory": false,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": false
  },
  {
    "field": "readmeFile",
@@ -435,9 +357,7 @@
    "description": "Relative path to Readme.md or alike, which contains at least the information specified in the NASSA template (<url placeholder>).",
    "type": "String",
    "format": "path",
-   "mandatory": false,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": false
  },
  {
    "field": "docsDir",
@@ -446,9 +366,7 @@
    "description": "Relative path to the directory containing documentation resources.",
    "type": "String",
    "format": "path",
-   "mandatory": false,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": false
  },
  {
    "field": "designDetailsFile",
@@ -457,8 +375,6 @@
    "description": "Relative path to the design details file. Recommended NASSA template: <url placeholder>",
    "type": "String",
    "format": "path",
-   "mandatory": false,
-   "implemented in nassa-hs": true,
-   "format check implemented in nassa-hs": true
+   "mandatory": false
  }
 ]
