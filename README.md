@@ -7,7 +7,7 @@ The schema for formatting NASSA modules (NASSA.yml fields, directory and file st
 
 ```
 YYYY-SURNAME-001 (module root)
-│   CHANGELOG.txt
+│   CHANGELOG.md
 │   LICENSE
 |   NASSA.yml
 │   README.md
@@ -29,7 +29,7 @@ YYYY-SURNAME-001 (module root)
 ```
 YYYY-SURNAME-001 (module root)
 │   .gitignore
-│   CHANGELOG.txt
+│   CHANGELOG.md
 │   LICENSE
 |   NASSA.yml
 │   README.md
