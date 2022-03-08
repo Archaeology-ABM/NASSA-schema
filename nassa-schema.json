@@ -5,7 +5,7 @@
    "parent": "",
    "description": "Module identification number. Assigned when opening a submission.",
    "type": "String",
-   "format": "<YEAR>-<FIRSTAUTHORSURNAME>-<999> or a hash?",
+   "format": "YEAR-FIRSTAUTHORSURNAME-999",
    "mandatory": true
  },
  {
@@ -68,7 +68,7 @@
    "parent": "contributors",
    "description": "Full name of a contributor",
    "type": "String",
-   "format": "<SURNAME>, <NAME> with no accent marks",
+   "format": "SURNAME, NAME with no accent marks",
    "mandatory": true
  },
  {
