@@ -42,16 +42,19 @@ YYYY-SURNAME-001 (module root)
 │   │
 │   └───netlogo
 │   |   │   tableOfContents.md
+│   |   │   instructions.md
 │   |   │   moduleTitle interface.png
 │   |   │   ...
 │   |
 │   └───python
 │   |   │   tableOfContents.md
+│   |   │   instructions.md
 │   |   │   diagram.png
 │   |   │   ...
 │   |
 │   └───r
 │   |   │   tableOfContents.md
+│   |   │   instructions.md
 │   |   │   pseudoCode.txt
 │   |   │   ...
 |   |
