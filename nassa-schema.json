@@ -367,14 +367,5 @@
    "type": "String",
    "format": "path",
    "mandatory": false
- },
- {
-   "field": "designDetailsFile",
-   "level": 0,
-   "parent": "",
-   "description": "Relative path to the design details file. Recommended NASSA template: <url placeholder>",
-   "type": "String",
-   "format": "path",
-   "mandatory": false
  }
 ]

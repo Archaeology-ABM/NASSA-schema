@@ -15,13 +15,12 @@ YYYY-SURNAME-001 (module root)
 │
 └───documentation
 │   │   tableOfContents.md
-│   │
-│   └───<IMPLEMENTATION LANGUAGE>
-│       │   tableOfContents.md
-│       │   ... (minimum depending on language)
 │   
 └───<IMPLEMENTATION LANGUAGE>
     │   moduleShortTitle.<LANGUAGE EXTENSION>
+    │
+    └───documentation
+        │   tableOfContents.md
 ```
 
 ### Maximum (can have)
@@ -39,29 +38,15 @@ YYYY-SURNAME-001 (module root)
 │   │   tableOfContents.md
 │   │   designDetails.md
 |   │   ...
+│   
+└───netlogo_implementation
+│   │   moduleShortTitle.nlogo
 │   │
-│   └───netlogo
+│   └───documentation
 │   |   │   tableOfContents.md
 │   |   │   instructions.md
 │   |   │   moduleTitle interface.png
 │   |   │   ...
-│   |
-│   └───python
-│   |   │   tableOfContents.md
-│   |   │   instructions.md
-│   |   │   diagram.png
-│   |   │   ...
-│   |
-│   └───r
-│   |   │   tableOfContents.md
-│   |   │   instructions.md
-│   |   │   pseudoCode.txt
-│   |   │   ...
-|   |
-|   |   ... (other implementations)
-│   
-└───netlogo_implementation
-│   │   moduleShortTitle.nlogo
 │   │
 │   └───input
 │   │   │   aDataset.csv
@@ -77,6 +62,12 @@ YYYY-SURNAME-001 (module root)
 │   │   moduleShortTitle.py
 │   │   demonstration.ipynb
 |   |   ...
+│   |
+│   └───documentation
+│   |   │   tableOfContents.md
+│   |   │   instructions.md
+│   |   │   diagram.png
+│   |   │   ...
 │   │
 │   └───input
 │   │   │   aDataset.csv
@@ -94,6 +85,12 @@ YYYY-SURNAME-001 (module root)
 │   │   demonstration.html
 │   │   demonstration.md
 |   |   ...
+│   |
+│   └───documentation
+│   |   │   tableOfContents.md
+│   |   │   instructions.md
+│   |   │   pseudoCode.txt
+│   |   │   ...
 |   |
 │   └───demonstration_files
 │   │   │   unnamed-chunk-5-1.png
@@ -156,7 +153,6 @@ YYYY-SURNAME-001 (module root)
 | unit                 | 1     | outputs         | Variable/object unit of measurement, if applicable.                                                                                                                                                                                                                             | String | free text                                                                                                                                                            | false     |
 | description          | 1     | outputs         | Variable/object description. Meaning, data structure, or any other relevant information for data analysis and interpretation or the use of the output as input in another module.                                                                                               | String | free text                                                                                                                                                            | false     |
 | readmeFile           | 0     |                 | Relative path to Readme.md or alike, which contains at least the information specified in the NASSA template (<url placeholder>).                                                                                                                                               | String | path                                                                                                                                                                 | false     |
-| docsDir              | 0     |                 | Relative path to the directory containing documentation resources.                                                                                                                                                                                                              | String | path                                                                                                                                                                 | false     |
-| designDetailsFile    | 0     |                 | Relative path to the design details file. Recommended NASSA template: <url placeholder>                                                                                                                                                                                         | String | path                                                                                                                                                                 | false     |
+| docsDir              | 0     |                 | Relative path to the directory containing the general documentation resources. The same directory name should be also use inside implementations directories to contain implementation-specific documentation resources (see 'Module file structure' above).                                                                                                                                                                                                              | String | path                                                                                                                                                                 | false     |
 
 (generated with https://kdelmonte.github.io/json-to-markdown-table/)
