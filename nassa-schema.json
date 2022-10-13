@@ -201,7 +201,7 @@
    "field": "modellingKeywords",
    "level": 0,
    "parent": "",
-   "description": "Modelling-related keyword(s). Using NASSA ontology: <url placeholder>",
+   "description": "Modelling-related keyword(s). Using NASSA schema specifications.",
    "type": "Array",
    "format": "",
    "mandatory": true
@@ -210,7 +210,7 @@
    "field": "programmingKeywords",
    "level": 0,
    "parent": "",
-   "description": "Programming-related keyword(s). Using NASSA ontology: <url placeholder>",
+   "description": "Programming-related keyword(s). Using NASSA schema specifications.",
    "type": "Array",
    "format": "",
    "mandatory": true
@@ -363,7 +363,7 @@
    "field": "docsDir",
    "level": 0,
    "parent": "",
-   "description": "Relative path to the directory containing documentation resources.",
+   "description": "Relative path to the directory containing the general documentation resources. The same directory name should be also use inside implementations directories to contain implementation-specific documentation resources (see 'Module file structure'",
    "type": "String",
    "format": "path",
    "mandatory": false
