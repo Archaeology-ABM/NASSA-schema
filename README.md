@@ -1,6 +1,18 @@
 # NASSA-schema
 The schema for formatting NASSA modules (NASSA.yml fields, directory and file structure).
 
+## Table of contents
+
+- [NASSA-schema](#nassa-schema)
+  - [Table of contents](#table-of-contents)
+  - [Module file structure](#module-file-structure)
+    - [Minimum (must have, to pass validation)](#minimum-must-have-to-pass-validation)
+    - [Maximum (can have)](#maximum-can-have)
+  - [NASSA.yml fields](#nassayml-fields)
+  - [NASSA keywords](#nassa-keywords)
+    - [Modelling keywords](#modelling-keywords)
+  - [Programming keywords](#programming-keywords)
+
 ## Module file structure
 
 ### Minimum (must have, to pass validation)
@@ -135,12 +147,12 @@ YYYY-SURNAME-001 (module root)
 | subjects             | 1     | domainKeywords  | Subject keyword(s). Example/recommendation: https://ehrafworldcultures.yale.edu/ehrafe/majorSubjects.do                                                                                                                                                                         | Array  |                                                                                                                                                                      | false     |
 | regions              | 1     | domainKeywords  | Region keyword(s). Example/recommendation: http://www.geonames.org/                                                                                                                                                                                                             | Array  |                                                                                                                                                                      | false     |
 | periods              | 1     | domainKeywords  | Period keyword(s). Example/recommendation: https://perio.do/en/                                                                                                                                                                                                                 | Array  |                                                                                                                                                                      | false     |
-| modellingKeywords    | 0     |                 | Modelling-related keyword(s). Using NASSA ontology: <url placeholder>                                                                                                                                                                                                           | Array  |                                                                                                                                                                      | true      |
-| programmingKeywords  | 0     |                 | Programming-related keyword(s). Using NASSA ontology: <url placeholder>                                                                                                                                                                                                         | Array  |                                                                                                                                                                      | true      |
+| modellingKeywords    | 0     |                 | Modelling-related keyword(s). Using NASSA schema specifications.                                                                                                                                                                                                                | Array  |                                                                                                                                                                      | true      |
+| programmingKeywords  | 0     |                 | Programming-related keyword(s). Using NASSA schema specifications.                                                                                                                                                                                                              | Array  |                                                                                                                                                                      | true      |
 | implementations      | 0     |                 | List of implementations in different programming languages                                                                                                                                                                                                                      |        |                                                                                                                                                                      | true      |
 | language             | 1     | implementations | Programming language                                                                                                                                                                                                                                                            | String | Options: R, Python, Netlogo, Java, Julia, C#, Ruby, Processing                                                                                                       | true      |
 | codeDir              | 1     | implementations | Relative path to the directory containing the implementation in this language                                                                                                                                                                                                   | String | path                                                                                                                                                                 | true      |
-| softwareDependencies | 0     |                 | Listing any software (libraries, packages, etc), specifying the release version, on which the module relies to properly function.                                                                                                                                               | Array  | free text                                                                                                                                                            | true      |
+| softwareDependencies | 1     | implementations | Listing any software (libraries, packages, etc), specifying the release version, on which the module implementation relies to properly function.                                                                                                                                | Array  | free text                                                                                                                                                            | true      |
 | inputs               | 0     |                 | List of inputs required by the module. Create entries for each of the variables that can or should be given/set externally, so that the module can work.                                                                                                                        |        |                                                                                                                                                                      | false     |
 | name                 | 1     | inputs          | Parameter/variable/file name in the module.                                                                                                                                                                                                                                     | String | free text                                                                                                                                                            | false     |
 | type                 | 1     | inputs          | Parameter/variable/file type. Use the programming language specific type.                                                                                                                                                                                                       | String | free text                                                                                                                                                            | false     |
@@ -153,6 +165,174 @@ YYYY-SURNAME-001 (module root)
 | unit                 | 1     | outputs         | Variable/object unit of measurement, if applicable.                                                                                                                                                                                                                             | String | free text                                                                                                                                                            | false     |
 | description          | 1     | outputs         | Variable/object description. Meaning, data structure, or any other relevant information for data analysis and interpretation or the use of the output as input in another module.                                                                                               | String | free text                                                                                                                                                            | false     |
 | readmeFile           | 0     |                 | Relative path to Readme.md or alike, which contains at least the information specified in the NASSA template (<url placeholder>).                                                                                                                                               | String | path                                                                                                                                                                 | false     |
-| docsDir              | 0     |                 | Relative path to the directory containing the general documentation resources. The same directory name should be also use inside implementations directories to contain implementation-specific documentation resources (see 'Module file structure' above).                                                                                                                                                                                                              | String | path                                                                                                                                                                 | false     |
+| docsDir              | 0     |                 | Relative path to the directory containing the general documentation resources. The same directory name should be also use inside implementations directories to contain implementation-specific documentation resources (see 'Module file structure' resources.                                                                                                                                                                                                              | String | path                                                                                                                                                                 | false     |
 
 (generated with https://kdelmonte.github.io/json-to-markdown-table/)
+
+## NASSA keywords
+
+### Modelling keywords
+
+```
+initialisation
+|
+└───agent initialisation
+└───grid initialisation
+└───time initialisation
+└───parameter initialisation
+└───variable initialisation
+    └───spatial data input
+    └───temporal data input
+```
+
+```
+runtime
+|
+└───agent
+|   └───agent variables
+|   └───agent behaviour (self)
+|   └───agent behaviour (other)
+|   └───agent behaviour (grid)
+└───grid
+|   └───grid variables
+|   └───grid behaviour (self)
+|   └───grid behaviour (other)
+|   └───grid behaviour (grid)
+└───world
+    └───scheduler
+    └───time
+    └───stochasticity
+    └───calculation
+    └───interface
+```
+
+```
+experiment
+|
+└───output
+|   └───output formatting
+|   └───output summary 
+|   └───output visualisation
+|   └───output exporting
+|   └───output testing
+└───data analysis
+|   └───data importing
+|   └───data preparation
+|   └───statistics
+|   └───data visualisation
+└───experiment design
+    └───stop condition
+    └───parameter exploration
+    └───event schedulling
+    └───batch management
+```
+
+## Programming keywords
+
+Classification based on ["Comparison of programming paradigms" at Wikipedia.org](https://en.wikipedia.org/wiki/Comparison_of_programming_paradigms). Please note that the goal is not to keep a bullet-proof classification, but to help in querying relevant information from the module library.
+
+```
+Action
+
+Array-oriented
+
+Automata-based
+
+Concurrent computing
+|
+└───Actor-based
+└───Choreographic programming
+└───Multitier programming
+└───Relativistic programming
+└───Structured concurrency
+
+Data-driven
+
+Declarative (contrast: Imperative)
+|
+└───Functional
+|   └───Functional logic
+|   └───Purely functional
+└───Logic
+|   └───Abductive logic
+|   └───Answer set
+|   └───Concurrent logic
+|   └───Functional logic
+|   └───Inductive logic
+|
+└───Constraint
+|   └───Constraint logic
+|       └───Concurrent constraint logic
+|
+└───Dataflow
+|   └───Flow-based
+|   └───Reactive
+|       └───Functional reactive
+└───Ontology
+└───Query language
+
+Differentiable
+
+Dynamic/scripting
+
+Event-driven
+
+Function-level (contrast: Value-level)
+└───Point-free style
+    └───Concatenative
+
+Generic
+
+Imperative (contrast: Declarative)
+└───Procedural
+└───Object-oriented
+
+Intentional
+
+Language-oriented
+└───Domain-specific
+
+Literate
+
+Natural-language programming
+
+Metaprogramming
+└───Automatic
+|   └───Inductive programming
+└───Reflective
+|   └───Attribute-oriented
+└───Macro
+└───Template
+
+Non-structured (contrast: Structured)
+└───Array
+
+Nondeterministic
+
+Parallel computing
+└───Process-oriented
+
+Probabilistic
+
+Quantum
+
+Set-theoretic
+
+Stack-based
+
+Structured (contrast: Non-structured)
+└───Block-structured
+└───Object-oriented
+|   └───Agent-oriented
+|   └───Class-based
+|   └───Concurrent
+|   └───Prototype-based
+|   └───By separation of concerns:
+|       └───Aspect-oriented
+|       └───Role-oriented
+|       └───Subject-oriented
+└───Recursive
+
+Symbolic
+
+Value-level (contrast: Function-level)
