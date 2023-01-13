@@ -221,7 +221,7 @@
    "parent": "implementations",
    "description": "Programming language",
    "type": "String",
-   "format": "Options: 'Csharp', 'Java', 'Julia', 'NetLogo', 'Processing', 'Python', 'R', 'Ruby'. New languages must be added to `nassa-hs/Types.hs` before modules using it can be accepted.",
+   "format": "Options: 'C#', 'Java', 'Julia', 'NetLogo', 'Processing', 'Python', 'R', 'Ruby'. New languages must be added to `nassa-hs/Types.hs` before modules using it can be accepted.",
    "mandatory": true
  },
  {
