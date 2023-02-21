@@ -9,6 +9,7 @@ The schema for formatting NASSA modules (NASSA.yml fields, directory and file st
     - [Minimum (must have, to pass validation)](#minimum-must-have-to-pass-validation)
     - [Maximum (can have)](#maximum-can-have)
   - [NASSA.yml fields](#nassayml-fields)
+  - [Programming languages](#programming-languages)
   - [NASSA keywords](#nassa-keywords)
     - [Modelling keywords](#modelling-keywords)
   - [Programming keywords](#programming-keywords)
@@ -24,15 +25,9 @@ YYYY-SURNAME-001 (module root)
 |   NASSA.yml
 │   README.md
 │   references.bib
-│
-└───documentation
-│   │   tableOfContents.md
 │   
 └───<IMPLEMENTATION LANGUAGE>
-    │   moduleShortTitle.<LANGUAGE EXTENSION>
-    │
-    └───documentation
-        │   tableOfContents.md
+    └   moduleShortTitle.<LANGUAGE EXTENSION>
 ```
 
 ### Maximum (can have)
@@ -149,8 +144,9 @@ YYYY-SURNAME-001 (module root)
 | modellingKeywords    | 0     |                 | Modelling-related keyword(s). Using NASSA schema specifications.                                                                                                                                                                                                                | Array  |                                                                                                                                                                      | true      |
 | programmingKeywords  | 0     |                 | Programming-related keyword(s). Using NASSA schema specifications.                                                                                                                                                                                                              | Array  |                                                                                                                                                                      | true      |
 | implementations      | 0     |                 | List of implementations in different programming languages                                                                                                                                                                                                                      |        |                                                                                                                                                                      | true      |
-| language             | 1     | implementations | Programming language                                                                                                                                                                                                                                                            | String | Options: R, Python, Netlogo, Java, Julia, C#, Ruby, Processing                                                                                                       | true      |
+| language             | 1     | implementations | Programming language                                                                                                                                                                                                                                                            | String | Options: 'C#', 'Java', 'Julia', 'NetLogo', 'Processing', 'Python', 'R', 'Ruby'.                                                                                      | true      |
 | softwareDependencies | 1     | implementations | Listing any software (libraries, packages, etc), specifying the release version, on which the module implementation relies to properly function.                                                                                                                                | Array  | free text                                                                                                                                                            | true      |
+| docsDir              | 0     |                 | Relative path to the directory containing general module documentation.                                                                                                                                                                                                         | String | path                                                                                                                                                                 | false     |
 | inputs               | 0     |                 | List of inputs required by the module. Create entries for each of the variables that can or should be given/set externally, so that the module can work.                                                                                                                        |        |                                                                                                                                                                      | false     |
 | name                 | 1     | inputs          | Parameter/variable/file name in the module.                                                                                                                                                                                                                                     | String | free text                                                                                                                                                            | false     |
 | type                 | 1     | inputs          | Parameter/variable/file type. Use the programming language specific type.                                                                                                                                                                                                       | String | free text                                                                                                                                                            | false     |
@@ -164,6 +160,21 @@ YYYY-SURNAME-001 (module root)
 | description          | 1     | outputs         | Variable/object description. Meaning, data structure, or any other relevant information for data analysis and interpretation or the use of the output as input in another module.                                                                                               | String | free text                                                                                                                                                            | false     |
 
 (generated with https://kdelmonte.github.io/json-to-markdown-table/)
+
+## Programming languages
+
+These are the programming languages currently specified:
+
+| Language name to be used in the NASSA.yml file | Directory name for the respective implementation |
+|------------------------------------------------|--------------------------------------------------|
+| C#                                             | `csharp_implementation`                          |
+| Java                                           | `java_implementation`                            |
+| Julia                                          | `julia_implementation`                           |
+| NetLogo                                        | `netlogo_implementation`                         |
+| Processing                                     | `processing_implementation`                      |
+| Python                                         | `python_implementation`                          |
+| R                                              | `r_implementation`                               |
+| Ruby                                           | `ruby_implementation`                            |
 
 ## NASSA keywords
 

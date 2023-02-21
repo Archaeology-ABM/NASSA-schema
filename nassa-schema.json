@@ -221,7 +221,7 @@
    "parent": "implementations",
    "description": "Programming language",
    "type": "String",
-   "format": "Options: R, Python, Netlogo, Java, Julia, C#, Ruby, Processing",
+   "format": "Options: 'C#', 'Java', 'Julia', 'NetLogo', 'Processing', 'Python', 'R', 'Ruby'.",
    "mandatory": true
  },
  {
@@ -232,6 +232,15 @@
    "type": "Array",
    "format": "free text",
    "mandatory": true
+ },
+ {
+   "field": "docsDir",
+   "level": 0,
+   "parent": "",
+   "description": "Relative path to the directory containing general module documentation.",
+   "type": "String",
+   "format": "path",
+   "mandatory": false
  },
  {
    "field": "inputs",
