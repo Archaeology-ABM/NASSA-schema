@@ -237,7 +237,7 @@
    "field": "docsDir",
    "level": 0,
    "parent": "",
-   "description": "Relative path to the directory containing the general documentation resources. The same directory name should be also use inside implementations directories to contain implementation-specific documentation resources (see 'Module file structure'",
+   "description": "Relative path to the directory containing general module documentation.",
    "type": "String",
    "format": "path",
    "mandatory": false
