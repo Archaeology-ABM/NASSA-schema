@@ -1,3 +1,5 @@
+- V 0.5.1: format for license must now a valid SPDX identifier (second column at https://spdx.org/licenses/ ).
+
 - V 0.5.0: Recovered docsDir field but making the documentation subdirectories not compulsory in file structure. Added more explicit list of programming languages.
 
 - V 0.4.0: Assuming now that subdirectory names and default files (README.md, references.bib) are fixed, so deleted the following fields: bibFile, codeDir, readmeFile, docsDir.
