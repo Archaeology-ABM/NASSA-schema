@@ -95,7 +95,7 @@
    "parent": "",
    "description": "Software license for the code in this module",
    "type": "String",
-   "format": "free text",
+   "format": "valid SPDX identifier (second column at https://spdx.org/licenses)",
    "mandatory": false
  },
  {
