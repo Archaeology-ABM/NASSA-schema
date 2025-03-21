@@ -1,3 +1,5 @@
+- V 0.6.0: Introducing cover-image (non-mandatory field) and modifying specifications for title and description fields.
+
 - V 0.5.1: format for license must now a valid SPDX identifier (second column at https://spdx.org/licenses/ ).
 
 - V 0.5.0: Recovered docsDir field but making the documentation subdirectories not compulsory in file structure. Added more explicit list of programming languages.

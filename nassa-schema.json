@@ -30,9 +30,9 @@
    "field": "title",
    "level": 0,
    "parent": "",
-   "description": "Module name or title. It must include a useful description of module.",
+   "description": "Module name or title. Acronyms with no verbs are recommended.",
    "type": "String",
-   "format": "free text, max. 100",
+   "format": "free text, max. 50 characters",
    "mandatory": true
  },
  {
@@ -111,10 +111,19 @@
    "field": "description",
    "level": 0,
    "parent": "",
-   "description": "Description of what the module does. It should expand the information already given in the name/title.",
+   "description": "A concise but informative description of what the module does.",
    "type": "String",
-   "format": "free text",
+   "format": "free text, max. 300 characters",
    "mandatory": true
+ },
+ {
+  "field": "cover-image",
+  "level": 0,
+  "parent": "",
+  "description": "Path to a image file, preferably in the root of the module. Accepted formats: PNG, JPG, JPEG, SVG.",
+  "type": "String",
+  "format": "path",
+  "mandatory": false
  },
  {
    "field": "relatedModules",
