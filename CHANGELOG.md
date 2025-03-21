@@ -1,4 +1,4 @@
-- V 0.6.0: Introducing cover-image (non-mandatory field) and modifying specifications for title and description fields.
+- V 1.0.0: Introducing cover-image (non-mandatory field) and modifying specifications for title and description fields.
 
 - V 0.5.1: format for license must now a valid SPDX identifier (second column at https://spdx.org/licenses/ ).
 
