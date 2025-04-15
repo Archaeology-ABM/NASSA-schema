@@ -13,6 +13,7 @@ The schema for formatting NASSA modules (NASSA.yml fields, directory and file st
   - [NASSA keywords](#nassa-keywords)
     - [Modelling keywords](#modelling-keywords)
   - [Programming keywords](#programming-keywords)
+  - [README.md](#readmemd)
 
 ## Module file structure
 
@@ -345,3 +346,44 @@ Structured (contrast: Non-structured)
 Symbolic
 
 Value-level (contrast: Function-level)
+```
+
+## README.md
+
+All modules are required to have a README.md file. 
+
+A minimum mandatory structure includes:
+
+```{markdown}
+# Title
+*by Author(s)*
+
+## Further information
+
+(Free text no longer than 10000 characters)
+
+```
+
+It is important that `## Further information` exists and has no more than 10000 characters. The text inside this section will be scrapped and displayed in the module profile page at [Netherland's eScience Center's Research Software Directory](https://research-software-directory.org/).
+
+We recommend also including a short description and sections on License and References (if any):
+
+```{markdown}
+# Title
+*by Author(s)*
+
+(short description)
+
+## License
+
+(name of the licence)
+
+## References
+
+(reference items)
+
+## Further information
+
+(Free text no longer than 10000 characters)
+
+```
