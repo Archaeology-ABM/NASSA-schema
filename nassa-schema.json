@@ -117,7 +117,7 @@
    "mandatory": true
  },
  {
-  "field": "cover-image",
+  "field": "coverImage",
   "level": 0,
   "parent": "",
   "description": "Path to a image file, preferably in the root of the module. Accepted formats: PNG, JPG, JPEG, SVG.",
