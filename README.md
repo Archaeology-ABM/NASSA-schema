@@ -364,7 +364,7 @@ A minimum mandatory structure includes:
 
 ```
 
-It is important that `## Further information` exists and has no more than 10000 characters. The text inside this section will be scrapped and displayed in the module profile page at [Netherland's eScience Center's Research Software Directory](https://research-software-directory.org/).
+It is important that `## Further information` exists and is no more than 10000 characters long. The text inside this section will be scraped and displayed in the module profile page at [Netherland's eScience Center's Research Software Directory](https://research-software-directory.org/).
 
 We recommend also including a short description and sections on License and References (if any):
 
