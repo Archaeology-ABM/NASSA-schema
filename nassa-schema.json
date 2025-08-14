@@ -84,7 +84,7 @@
    "field": "orcid",
    "level": 1,
    "parent": "contributors",
-   "description": "ORCID number of a contributor",
+   "description": "ORCID number of a contributor (if absent, authors should either create one or use a dummy place-holder number (e.g. 0000-0002-1825-0097)",
    "type": "String",
    "format": "9999-9999-9999-9999",
    "mandatory": true
